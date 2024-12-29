@@ -38,7 +38,7 @@ public class AccountInformation {
         driver.browser().navigateToURL(url);
     }
 
-    @Step("Fill details: Title, Name, Email, Password, Date of birth,Select checkbox 'Sign up for our newsletter, Select checkbox 'Receive special offers from our partners")
+
     public AccountInformation accountInfo(String pass, String day, String month, String year) {
         driver.element().click(gender);
         driver.element().type(password, pass);
@@ -51,7 +51,7 @@ public class AccountInformation {
         return this;
     }
 
-    @Step("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
+
     public void addressInformation(String FirstName, String LastName, String Company, String Addressone, String Addresstwo, String Country, String State, String City, String Zipcode, String MobileNumber) {
         driver.element().type(firstname, FirstName);
         driver.element().type(SecondName, LastName);

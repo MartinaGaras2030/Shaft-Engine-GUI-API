@@ -11,20 +11,18 @@ public class MainMenu {
 
     private By signUpAndsignInLink = By.xpath("//a[@href='/login']");
     private By DeleteAccountLink = By.xpath("//a[@href='/delete_account']");
-    private By LoggedUserText = By.xpath("//a[contains(text(), 'Logged in as')]");
-    private By logouLink = By.xpath("//a[contains(text(), 'Logout')]");
+
 
     public MainMenu(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
     }
 
-    @Step(" Click on 'Signup / Login' button")
+
     public void signupLink() {
         driver.element().click(signUpAndsignInLink);
 
     }
 
-    @Step(" Click 'Delete Account' button")
     public void delete_account() {
         driver.element().click(DeleteAccountLink);
 

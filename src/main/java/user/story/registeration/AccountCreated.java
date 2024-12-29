@@ -22,13 +22,12 @@ public class AccountCreated {
         driver.browser().navigateToURL(url);
     }
 
-    @Step("Verify that 'ACCOUNT CREATED!' is visible")
+
     public AccountCreated assertionOnCreateAccount(String ExcpectedText) {
         driver.assertThat().element(AccountCreatedText).text().isEqualTo(ExcpectedText);
         return this;
     }
 
-    @Step("Click 'Continue' button")
     public void continueButton() {
         driver.element().click(ContinueButton);
     }

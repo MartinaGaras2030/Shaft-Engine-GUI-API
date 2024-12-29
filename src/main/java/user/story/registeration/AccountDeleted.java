@@ -16,13 +16,13 @@ public class AccountDeleted {
         this.driver = driver;
     }
 
-    @Step("Verify that 'ACCOUNT DELETED!' is visible ")
+
     public AccountDeleted assertionOnDEleteAccount(String expected) {
         driver.assertThat().element(AccountDeletedText).text().isEqualTo(expected);
         return this;
     }
 
-    @Step("Click 'Continue' button")
+
     public void continueButton() {
         driver.element().click(ContinueButton);
     }

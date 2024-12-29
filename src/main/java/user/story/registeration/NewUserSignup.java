@@ -20,7 +20,7 @@ public class NewUserSignup {
         driver.browser().navigateToURL(url);
     }
 
-    @Step("Enter name and email address ")
+
     public NewUserSignup signup(String username, String email) {
         driver.element().type(nameField_input, username);
         driver.element().type(emailField_input, email);

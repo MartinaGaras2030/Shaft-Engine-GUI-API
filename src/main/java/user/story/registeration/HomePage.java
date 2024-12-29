@@ -12,7 +12,7 @@ public class HomePage {
         this.driver = driver;
     }
 
-    @Step("Navigate to url 'http://automationexercise.com'")
+
     public HomePage navigatetohome() {
         driver.browser().navigateToURL(homeurl);
 
